@@ -2,6 +2,7 @@ var http = require('https'),
     ldap = require('ldapjs');
 
 var server = ldap.createServer(),
+    port = process.env.PORT || 1389,
     contacts = {},
     updateInterval = process.env.SLDAP_UPDATE_INTERVAL || 30*60*1000,
     apiToken = process.env.SLDAP_SLACK_API_TOKEN || '',
@@ -71,6 +72,6 @@ server.search('o='+organizationName.toLowerCase(), function(req, res, next) {
   return next();
 });
 
-server.listen(1389, function() {
-  console.log('LDAP server listening at %s', server.url);
+server.listen(port, function() {
+    console.log('LDAP server listening at %s', server.url);
 });
