@@ -4,7 +4,7 @@
   "description": "LDAP server based on Slack team information",
   "main": "sldap.js",
   "dependencies": {
-    "ldapjs": "~0.7.1",
+    "ldapjs": "~0.7.1"
   },
   "devDependencies": {},
   "scripts": {
