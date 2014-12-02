@@ -1,0 +1,16 @@
+{
+  "name": "sldap",
+  "version": "0.0.1",
+  "description": "LDAP server based on Slack team information",
+  "main": "sldap.js",
+  "dependencies": {
+    "ldapjs": "~0.7.1",
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Siavash Ghorbani <siavash@tictail.com>",
+  "license": "MIT"
+}
